@@ -1,0 +1,51 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICTOdataBaseControllerCore">
+      <HintPath>..\..\ICTOdataBaseControllerCore\ICTOdataBaseControllerCore\bin\Debug\net8.0\ICTOdataBaseControllerCore.dll</HintPath>
+    </Reference>
+    <Reference Include="ICTDBContextCore">
+      <HintPath>..\..\ICTDBContextCore\ICTDBContextCore\bin\Debug\net8.0\ICTDBContextCore.dll</HintPath>
+    </Reference>
+    <Reference Include="ICTCommonServiceCore">
+      <HintPath>..\..\ICTCommonCore\ICTCommonServiceCore\bin\Debug\net8.0\ICTCommonServiceCore.dll</HintPath>
+    </Reference>
+    <Reference Include="ICTSecurityServiceCore">
+      <HintPath>..\..\ICTSecurityCore\ICTSecurityServiceCore\bin\Debug\net8.0\ICTSecurityServiceCore.dll</HintPath>
+    </Reference>
+    <Reference Include="ICTSecurityDomainCore">
+      <HintPath>..\..\ICTSecurityCore\ICTSecurityDomainCore\bin\Debug\net8.0\ICTSecurityDomainCore.dll</HintPath>
+    </Reference>
+    <Reference Include="ICTBaseModelCore">
+      <HintPath>..\..\ICTBaseModelCore\ICTBaseModelCore\bin\Debug\net8.0\ICTBaseModelCore.dll</HintPath>
+    </Reference>
+    <Reference Include="ICTCommonUtilityCore">
+      <HintPath>..\..\ICTCommonCore\ICTCommonUtilityCore\bin\Debug\net8.0\ICTCommonUtilityCore.dll</HintPath>
+    </Reference>
+    <Reference Include="ICTFileControllerCore">
+      <HintPath>..\..\ICTFilePackageCore\ICTFileControllerCore\bin\Debug\net8.0\ICTFileControllerCore.dll</HintPath>
+    </Reference>
+    <Reference Include="ICTFileServiceCore">
+      <HintPath>..\..\ICTFilePackageCore\ICTFileServiceCore\bin\Debug\net8.0\ICTFileServiceCore.dll</HintPath>
+    </Reference>
+    <Reference Include="ICTFileDomainCore">
+      <HintPath>..\..\ICTFilePackageCore\ICTFileDomainCore\bin\Debug\net8.0\ICTFileDomainCore.dll</HintPath>
+    </Reference>
+    <Reference Include="ICTBaseDTOCore">
+      <HintPath>..\..\ICTBaseModelCore\ICTBaseDTOCore\bin\Debug\net8.0\ICTBaseDTOCore.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.OData" Version="8.2.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ICTPossibilityDomainCore\ICTPossibilityDomainCore.csproj" />
+    <ProjectReference Include="..\ICTPossibilityServiceCore\ICTPossibilityServiceCore.csproj" />
+  </ItemGroup>
+</Project>

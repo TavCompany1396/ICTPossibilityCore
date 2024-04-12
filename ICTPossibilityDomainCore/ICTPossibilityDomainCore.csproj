@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="8.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="ICTBaseModelCore">
+      <HintPath>..\..\ICTBaseModelCore\ICTBaseModelCore\bin\Debug\net8.0\ICTBaseModelCore.dll</HintPath>
+    </Reference>
+     <Reference Include="ICTCommonDomainCore">
+      <HintPath>..\..\ICTCommonCore\ICTCommonDomainCore\bin\Debug\net8.0\ICTCommonDomainCore.dll</HintPath>
+    </Reference>
+    <Reference Include="ICTSecurityDomainCore">
+      <HintPath>..\..\ICTSecurityCore\ICTSecurityDomainCore\bin\Debug\net8.0\ICTSecurityDomainCore.dll</HintPath>
+    </Reference>
+    <Reference Include="ICTFileDomainCore">
+      <HintPath>..\..\ICTFilePackageCore\ICTFileDomainCore\bin\Debug\net8.0\ICTFileDomainCore.dll</HintPath>
+    </Reference>
+   </ItemGroup>
+
+</Project>

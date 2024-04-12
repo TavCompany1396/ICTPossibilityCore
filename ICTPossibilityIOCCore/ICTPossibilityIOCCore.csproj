@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+    <Reference Include="ICTCommonServiceCore">
+      <HintPath>..\..\ICTCommonCore\ICTCommonServiceCore\bin\Debug\net8.0\ICTCommonServiceCore.dll</HintPath>
+    </Reference>
+    <Reference Include="ICTFileServiceCore">
+      <HintPath>..\..\ICTFilePackageCore\ICTFileServiceCore\bin\Debug\net8.0\ICTFileServiceCore.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ICTPossibilityServiceCore\ICTPossibilityServiceCore.csproj" />
+  </ItemGroup>
+
+</Project>
